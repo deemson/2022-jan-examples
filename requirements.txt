@@ -1,4 +1,5 @@
 mypy
 pytest
 sqlalchemy
+sqlalchemy[mypy]
 coverage
