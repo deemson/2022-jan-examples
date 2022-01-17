@@ -1,4 +1,4 @@
-package e04whentherearenogenerics;
+package e02genericsinstaticlanguage;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 from typing import Generic, TypeVar, List
 
-from e07covariance.common import Animal, Cat, Dog
+from e09covariance.common import Animal, Cat, Dog
 
 T = TypeVar("T", bound=Animal)
 

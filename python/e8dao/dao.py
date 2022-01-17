@@ -1,6 +1,6 @@
 from typing import TypeVar, Type, Generic, Optional
 from sqlalchemy.orm import Session
-from dao.models import Model
+from e8dao.models import Model
 
 ModelT = TypeVar("ModelT", bound=Model)
 

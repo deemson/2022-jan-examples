@@ -1,5 +1,5 @@
 from typing import List
-from e07covariance.common import Cat, Animal, Dog
+from e09covariance.common import Cat, Animal, Dog
 
 cats: List[Cat] = [Cat("Rocky"), Cat("Teddy")]
 

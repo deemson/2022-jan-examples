@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.orm import sessionmaker
 
-from dao.dao import DataAccessObject
-from dao.models import Model, User, Product
+from e8dao.dao import DataAccessObject
+from e8dao.models import Model, User, Product
 
 
 class MockModel(Model):

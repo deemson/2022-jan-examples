@@ -1,6 +1,6 @@
 from typing import List, Sequence
 
-from e07covariance.common import Animal, Cat
+from e09covariance.common import Animal, Cat
 
 
 def animal_names(animals: Sequence[Animal]) -> List[str]:
