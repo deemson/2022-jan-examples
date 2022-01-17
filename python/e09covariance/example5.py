@@ -2,7 +2,7 @@ from typing import TypeVar, Generic
 
 from e09covariance.common import Animal, Cat, Dog
 
-T = TypeVar("T")
+T = TypeVar("T", bound=Animal)
 
 
 class Pen(Generic[T]):
@@ -13,7 +13,7 @@ class Pen(Generic[T]):
         return self._animal
 
 
-def show_who_is_in_the_pen(pen: Pen[Animal]):
+def show_who_is_in_the_pen(pen: Pen[T]):
     animal = pen.get()
     print(f"we have a {animal.__class__.__name__} called '{animal.name}'")
 

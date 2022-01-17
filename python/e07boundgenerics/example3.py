@@ -1,20 +1,20 @@
-from typing import TypeVar, Generic, Type
+from typing import TypeVar, Type
 
 T = TypeVar("T", bound="Deserializable")
 
 
-class Deserializable(Generic[T]):
+class Deserializable:
     @classmethod
     def deserialize(cls: Type[T]) -> T:
         return cls()
 
 
-class User(Deserializable["User"]):
+class User(Deserializable):
     def do_a_user_thing(self):
         print("doing a user thing")
 
 
-class Product(Deserializable["Product"]):
+class Product(Deserializable):
     def do_a_product_thing(self):
         print("doing a product thing")
 
